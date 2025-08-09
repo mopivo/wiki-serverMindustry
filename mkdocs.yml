@@ -1,4 +1,16 @@
 site_name: My site
 site_url: https://mopivo.github.io/wiki-serverMindustry/
 theme:
+  palette:
+    primary: custom
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.indexes
+    - toc.integrate
   name: material
+nav:
+- главная: 'index.md'
+extra_css:
+  - stylesheets/extra.css
