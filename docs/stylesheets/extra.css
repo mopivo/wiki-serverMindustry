@@ -1,12 +1,84 @@
 :root {
-    --md-primary-fg-color: #F5DEB3;
-    --md-primary-fg-color--light: #000000;
-    --md-primary-fg-color--dark: #ff7948;
+    /* Основные цвета */
+    --md-primary-fg-color: #f5DEB3;        /* Пшеничный */
+    --md-primary-fg-color--light: #f8e7ca; 
+    --md-primary-fg-color--dark: #e6c99a;  
+    
+    /* Чёрный текст */
+    --md-default-fg-color:        #000000;
+    --md-default-fg-color--light: #000000;
+    --md-default-fg-color--dark:  #000000;
+    
+    /* Цвет текста в верхней панели */
+    --md-primary-bg-color: #000000;
+    --md-primary-bg-color--light: #000000;
+    
+    /* Акцентные цвета */
     --md-accent-fg-color: #607D8B;
 }
 
 [data-md-color-scheme="slate"] {
     --md-hue: 210;
+    --md-default-fg-color:        #000000;
+    --md-default-fg-color--light: #000000;
+    --md-default-fg-color--dark:  #000000;
+    --md-default-bg-color: #f0f0f0;
+    --md-primary-bg-color: #000000;
+}
+
+/* Верхняя навигационная панель */
+.md-header__title,
+.md-header__topic,
+.md-header__button {
+    color: #000000 !important;
+}
+
+.md-header__title {
+    font-weight: 700;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    color: #000000 !important;
+    fill: currentColor !important;
+}
+
+/* Боковое меню */
+.md-nav__title,
+.md-nav__link {
+    color: #000000 !important;
+}
+
+.md-navitem .md-navlink--active {
+    color: var(--md-primary-fg-color) !important;
+    font-weight: bold;
+}
+
+.md-nav--primary .md-navtitle[for=drawer] {
+    background-color: var(--md-primary-fg-color);
+    color: #000000 !important;
+}
+
+.md-navlist .md-navlist .md-nav__link {
+    padding-left: 1.8rem;
+    color: #000000 !important;
+}
+
+.md-nav__link svg {
+    color: #000000 !important;
+}
+
+.md-nav__link:is(:focus,:hover) {
+    color: var(--md-accent-fg-color) !important;
+}
+
+.md-navitem .md-navitem .md-nav__link {
+    font-weight: 600;
+}
+
+/* Основной контент */
+.md-typeset {
+    color: #000000 !important;
 }
 
 .md-typeset .tabbed-set > label {
@@ -14,5 +86,16 @@
 }
 
 .admonition.mindustry {
-    border-left: 0.4rem solid #000000;
+    border-left: 0.4rem solid #FF5722;
+}
+
+.md-typeset h1, 
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset table {
+    color: #000000 !important;
 }
