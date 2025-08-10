@@ -15,6 +15,10 @@
     
     /* Акцентные цвета */
     --md-accent-fg-color: #607D8B;
+    
+    /* ЦВЕТА ССЫЛОК (ИСПРАВЛЕНИЕ) */
+    --md-typeset-a-color: #000000 !important; /* Чёрные ссылки */
+    --md-typeset-a-color--hover: var(--md-accent-fg-color) !important; /* Акцент при наведении */
 }
 
 [data-md-color-scheme="slate"] {
@@ -22,8 +26,11 @@
     --md-default-fg-color:        #000000;
     --md-default-fg-color--light: #000000;
     --md-default-fg-color--dark:  #000000;
-    --md-default-bg-color: #f0f0f0;
+    --md-default-bg-color: #fcd9d9;
     --md-primary-bg-color: #000000;
+    
+    /* Цвета ссылок для тёмной темы */
+    --md-typeset-a-color: #000000 !important;
 }
 
 /* Верхняя навигационная панель */
@@ -98,4 +105,18 @@
 .md-typeset ol,
 .md-typeset table {
     color: #000000 !important;
+}
+
+/* СТИЛИ ДЛЯ ССЫЛОК (ИСПРАВЛЕНИЕ) */
+.md-typeset a {
+    color: var(--md-typeset-a-color) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--md-accent-fg-color);
+    text-underline-offset: 3px;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+    color: var(--md-typeset-a-color--hover) !important;
+    text-decoration-color: currentColor;
 }

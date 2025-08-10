@@ -5,9 +5,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  palette:
-    primary: wheat
-    accent: brown
+  
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -44,9 +42,11 @@ markdown_extensions:
 nav:
   - Главная: index.md
   - Установка:
+    - способы:
+      - без docker: setup/nodocker.md
+      - с docker: setup/docker.md
     - Локальный сервер: setup/local.md
-    - VPS/Dedicated: setup/vps.md
-    - Docker: setup/docker.md
+    - vps: setup/vps.md
   - Конфигурация:
     - Базовые настройки: config/basic.md
     - Плагины: config/plugins.md
