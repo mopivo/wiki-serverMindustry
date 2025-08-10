@@ -7,7 +7,7 @@ theme:
   name: material
   palette:
     primary: wheat
-    accent: blue grey
+    accent: brown
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -62,20 +62,14 @@ nav:
     - Диагностика: troubleshooting/diagnostics.md
 
 extra:
+  generator: false
   analytics:
     provider: google
     property: UA-XXXXX-X
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mopivo/wiki-serverMindustry
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/mindustry
-    - icon: fontawesome/brands/steam
-      link: https://store.steampowered.com/app/1127400/Mindustry/
+
 
 copyright: |
-  Mindustry Server Wiki &copy; 2023 - {year} | 
-  <a href="https://github.com/Anuken/Mindustry" target="_blank">Mindustry</a> - 
-  игра от Anuken | Документация обновлена: {{
-      git_revision_date_localized
-  }}
+  Created by mopivo with the support of a can of soda
